@@ -55,4 +55,3 @@ foodHtml = favoriteFoods.join(", ");
 
 // Display the array
 document.getElementById("food").innerHTML += "<br>" + foodHtml;
-
