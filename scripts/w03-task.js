@@ -66,8 +66,16 @@ let arrayElement = document.getElementById("array");
 arrayElement.textContent = numbers.join(", ");
 
 /* Output Odds Only Array */
+let oddNumbers = numbers.filter(function(num) {
+    return num % 2 !== 0;
+  });
+
+  let oddsElement = document.getElementById("odds");
+
+  oddsElement.textContent = oddNumbers.join(", ");
 
 /* Output Evens Only Array */
+document.querySelector("#evens").innerHTML = numbers.filter(number => number % 2 === 0).join(", ");
 
 /* Output Sum of Org. Array */
 
