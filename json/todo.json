@@ -1,62 +1,42 @@
 [
     {
-      "userId": 1,
-      "id": 1,
-      "title": "read scriptures",
+      "task": "read scriptures",
       "completed": false
     },
     {
-      "userId": 1,
-      "id": 2,
-      "title": "work out",
+      "task": "work out",
       "completed": false
     },
     {
-      "userId": 1,
-      "id": 3,
-      "title": "homework",
+      "task": "homework",
       "completed": false
     },
     {
-      "userId": 1,
-      "id": 4,
-      "title": "go to the temple",
+      "task": "go to the temple",
       "completed": true
     },
     {
-      "userId": 1,
-      "id": 5,
-      "title": "laundry",
+      "task": "laundry",
       "completed": false
     },
     {
-      "userId": 1,
-      "id": 6,
-      "title": "change oil",
+      "task": "change oil",
       "completed": false
     },
     {
-      "userId": 1,
-      "id": 7,
-      "title": "call parents",
+      "task": "call parents",
       "completed": false
     },
     {
-      "userId": 1,
-      "id": 8,
-      "title": "yardwork",
+      "task": "yardwork",
       "completed": true
     },
     {
-      "userId": 1,
-      "id": 9,
-      "title": "pay bills",
+      "task": "pay bills",
       "completed": false
     },
     {
-      "userId": 1,
-      "id": 10,
-      "title": "walk dog",
+      "task": "walk dog",
       "completed": true
     }
   ]

@@ -17,7 +17,7 @@ fetch('json/todo.json')
   .then(response => response.json())
   .then(data => {
     // Add the fetched data to the tasks array
-    data.forEach(item => tasks.push({ text: item.title, completed: item.completed }));
+    data.forEach(item => tasks.push({ text: item.task, completed: item.completed }));
 
     // Render the task list
     renderTaskList();
@@ -75,7 +75,7 @@ function renderTaskList() {
       tasks[index].completed = checkbox.checked;
       span.classList.toggle('completed');
     });
-    
+
     removeButton.addEventListener('click', function() {
       // Remove the task from the ArrayList
       tasks.splice(index, 1);
