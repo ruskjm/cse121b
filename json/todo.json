@@ -1,0 +1,62 @@
+[
+    {
+      "userId": 1,
+      "id": 1,
+      "title": "read scriptures",
+      "completed": false
+    },
+    {
+      "userId": 1,
+      "id": 2,
+      "title": "work out",
+      "completed": false
+    },
+    {
+      "userId": 1,
+      "id": 3,
+      "title": "homework",
+      "completed": false
+    },
+    {
+      "userId": 1,
+      "id": 4,
+      "title": "go to the temple",
+      "completed": true
+    },
+    {
+      "userId": 1,
+      "id": 5,
+      "title": "laundry",
+      "completed": false
+    },
+    {
+      "userId": 1,
+      "id": 6,
+      "title": "change oil",
+      "completed": false
+    },
+    {
+      "userId": 1,
+      "id": 7,
+      "title": "call parents",
+      "completed": false
+    },
+    {
+      "userId": 1,
+      "id": 8,
+      "title": "yardwork",
+      "completed": true
+    },
+    {
+      "userId": 1,
+      "id": 9,
+      "title": "pay bills",
+      "completed": false
+    },
+    {
+      "userId": 1,
+      "id": 10,
+      "title": "walk dog",
+      "completed": true
+    }
+  ]

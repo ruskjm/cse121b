@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSE 121b | Final Project: To-Do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <nav>
+      <ul id="menu">
+        <li><a id="toggleMenu">&equiv;</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="w01-task.html">W1 Task</a></li>
+        <li><a href="w03-task.html">W3 Task</a></li>
+        <li><a href="w04-task.html">W4 Task</a></li>
+        <li><a href="w05-task.html">W5 Task</a></li>
+        <li><a href="project.html" class="active">Final Project</a></li>
+      </ul>
+    </nav>
+    <header>
+      <h1>Final Project: To-Do List</h1>
+    </header>
+    <section id="todoListSection">
+      <main>
+        <!-- Add Task -->
+        <div>
+          <input type="text" id="newTask" placeholder="Enter a new task" />
+          <button id="addTask">Add</button>
+        </div>
+        <!-- Task List -->
+        <ul id="taskList"></ul>
+        <!-- Clear Completed Tasks -->
+        <button id="clearCompleted">Clear Completed Tasks</button>
+      </main>
+    </section>
+    <footer>&copy;<span id="year"></span> | CSE 121b | Final Project</footer>
+    <script src="scripts/main.js"></script>
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+    <script src="scripts/project.js"></script>
+  </body>
+</html>
