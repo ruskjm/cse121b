@@ -5,6 +5,7 @@ const newTaskInput = document.getElementById("newTask");
 const addTaskButton = document.getElementById("addTask");
 const taskList = document.getElementById("taskList");
 const clearCompletedButton = document.getElementById("clearCompleted");
+const loadTaskButton = document.getElementById("loadTaskButton");
 
 // Create an ArrayList to store the tasks
 const tasks = [];
@@ -12,17 +13,36 @@ const tasks = [];
 // Flag to track if the first task has been added
 let firstTaskAdded = false;
 
-// Fetch data from an json file
-fetch('json/todo.json')
-  .then(response => response.json())
-  .then(data => {
-    // Add the fetched data to the tasks array
-    data.forEach(item => tasks.push({ text: item.task, completed: item.completed }));
+// Function to load data from the JSON file
+function loadJsonData() {
+  // Check if the tasks array is empty
+  if (tasks.length === 0) {
+    fetch('json/todo.json')
+      .then(response => response.json())
+      .then(data => {
+        // Add the fetched data to the tasks array
+        data.forEach(item => tasks.push({ text: item.task, completed: item.completed }));
+        // Render the task list
+        renderTaskList();
+      })
+      .catch(error => console.error('Error fetching data:', error));
+  }
+}
 
-    // Render the task list
-    renderTaskList();
-  })
-  .catch(error => console.error('Error fetching data:', error));
+// Add event listener to the "Load JSON" button
+loadTaskButton.addEventListener('click', loadJsonData);
+
+// // Fetch data from an json file
+// fetch('json/todo.json')
+//   .then(response => response.json())
+//   .then(data => {
+//     // Add the fetched data to the tasks array
+//     data.forEach(item => tasks.push({ text: item.task, completed: item.completed }));
+
+//     // Render the task list
+//     renderTaskList();
+//   })
+//   .catch(error => console.error('Error fetching data:', error));
 
 // Add a new task
 addTaskButton.addEventListener('click', function() {

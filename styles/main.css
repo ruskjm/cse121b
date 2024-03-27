@@ -318,12 +318,24 @@ footer {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
+  #loadTaskButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ccc;
+    color: dark gray;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+
   #newTask {
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 70%;
+    margin-top: 10px;
   }
 
   #addTask {
@@ -367,5 +379,6 @@ footer {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-bottom: 40px;
   }
 }
