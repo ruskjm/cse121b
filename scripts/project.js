@@ -63,6 +63,12 @@ function renderTaskList() {
   const taskListItems = taskList.querySelectorAll("li");
   taskListItems.forEach((item) => item.remove());
 
+  // Clear the existing task count element
+  const existingTaskCountElement = taskList.querySelector('div');
+  if (existingTaskCountElement) {
+    existingTaskCountElement.remove();
+  }
+
   // Add the comment element
   addCommentElement();
 
@@ -83,7 +89,6 @@ function renderTaskList() {
       tasks[index].completed = checkbox.checked;
       span.classList.toggle('completed');
     });
-
     removeButton.addEventListener('click', function() {
       // Remove the task from the ArrayList
       tasks.splice(index, 1);
@@ -99,6 +104,14 @@ function renderTaskList() {
     // Add the list item to the task list
     taskList.appendChild(li);
   });
+
+  // Create an element to display the task count
+  const taskCountElement = document.createElement('div');
+  taskCountElement.textContent = `Total Tasks: ${tasks.length}`;
+  taskCountElement.style.marginTop = '1rem';
+
+  // Append the task count element to the task list
+  taskList.appendChild(taskCountElement);
 }
 
 // Clear completed tasks
