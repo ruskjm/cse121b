@@ -32,18 +32,6 @@ function loadJsonData() {
 // Add event listener to the "Load JSON" button
 loadTaskButton.addEventListener('click', loadJsonData);
 
-// // Fetch data from an json file
-// fetch('json/todo.json')
-//   .then(response => response.json())
-//   .then(data => {
-//     // Add the fetched data to the tasks array
-//     data.forEach(item => tasks.push({ text: item.task, completed: item.completed }));
-
-//     // Render the task list
-//     renderTaskList();
-//   })
-//   .catch(error => console.error('Error fetching data:', error));
-
 // Add a new task
 addTaskButton.addEventListener('click', function() {
   const taskText = newTaskInput.value.trim();
