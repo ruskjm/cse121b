@@ -309,6 +309,8 @@ footer {
     max-width: 950px;
   }
 
+  /* Sytle for the main 
+  content area for todoListTab*/
   #todoListTab main {
     max-width: 600px;
     margin: 0 auto;
@@ -318,6 +320,7 @@ footer {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
+  /* Style for "Load Task List" button */
   #loadTaskButton {
     padding: 10px 20px;
     font-size: 16px;
@@ -329,6 +332,7 @@ footer {
     margin-bottom: 10px;
   }
 
+  /* Style for adding a new task */
   #newTask {
     padding: 10px;
     font-size: 16px;
@@ -338,6 +342,8 @@ footer {
     margin-top: 10px;
   }
 
+  /* Style for "Add" button 
+  for adding a new task */
   #addTask {
     padding: 10px 20px;
     font-size: 16px;
@@ -348,12 +354,14 @@ footer {
     cursor: pointer;
   }
 
+  /* Style for task list */
   #taskList {
     list-style-type: none;
     padding: 0;
     margin: 20px 0;
   }
 
+  /* Style each task item in the list */
   #taskList li {
     display: flex;
     align-items: center;
@@ -362,6 +370,7 @@ footer {
     border-bottom: 1px solid #ccc;
   }
 
+  /* Style for remove button */
   #taskList li button {
     background-color: #f44336;
     color: #fff;
@@ -371,6 +380,8 @@ footer {
     cursor: pointer;
   }
 
+  /* Style for "Clear Completed Tasks" 
+  button */
   #clearCompleted {
     padding: 10px 20px;
     font-size: 16px;
